@@ -1,0 +1,13 @@
+<div class="todo <%= "done" if @item.get('done') %>">
+<div class="display">
+<input class="check" type="checkbox" <%= "checked" if @item.get('done') %>>
+<div class="todo-text">
+<%= @item.get('name') %>
+</div>
+<span class="todo-destroy"></span>
+</div>
+<div class="edit">
+<input class="todo-input" type="text" value="">
+</div>
+</div> 
+

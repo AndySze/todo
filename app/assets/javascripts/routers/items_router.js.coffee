@@ -9,7 +9,7 @@ class Todo.Routers.Items extends Backbone.Router
 
   index: ->
     view = new Todo.Views.ItemsIndex(collection: @collection)
-    $("#todos").html(view.render().el)
+    $("#todoapp").html(view.render().el)
 
   show : (id) ->
     alert "#{id}"
